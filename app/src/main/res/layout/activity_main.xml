@@ -33,6 +33,17 @@
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTintMode="screen"
+        style="@style/Widget.AppCompat.ProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"/>
+
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/addMeBtn"
         android:layout_width="match_parent"

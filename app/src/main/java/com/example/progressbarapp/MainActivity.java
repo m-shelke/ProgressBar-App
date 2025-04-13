@@ -15,7 +15,7 @@ import com.google.android.material.button.MaterialButton;
 public class MainActivity extends AppCompatActivity {
 
     //init XML Views
-    ProgressBar progressBar;
+    ProgressBar progressBar,progressBar_circular;
     MaterialButton addMeBtn;
     MaterialButton minusMeBtn;
 
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         //finding views and connecting to Java Code
         progressBar = findViewById(R.id.progressBar);
+       progressBar_circular = findViewById(R.id.progressBar2);
         addMeBtn = findViewById(R.id.addMeBtn);
         minusMeBtn = findViewById(R.id.minusMeBtn);
 
@@ -46,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 progress = progress+20;
                 //setting progress to ProgressBar
                 progressBar.setProgress(progress);
+
+                //setting visibility as VISIBLE
+                progressBar_circular.setVisibility(View.VISIBLE);
             }
         });
 
@@ -58,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 //setting progress to ProgressBar
                 progressBar.setProgress(progress);
 
-
+                //setting visibility as GONE
+                progressBar_circular.setVisibility(View.GONE);
             }
         });
     }
